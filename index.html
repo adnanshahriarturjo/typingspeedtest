@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="typing.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay (for dark effect) -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <h1>⌨️ Typing Speed Test</h1>
+
+    <!-- Text to Type -->
+    <p id="text">
+      The quick brown fox jumps over the lazy dog_
+    </p>
+
+    <!-- Emoji Reaction -->
+    <div id="emoji">😄</div>
+
+    <!-- Typing Box -->
+    <textarea id="input" placeholder="Start typing here..."></textarea>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="pauseBtn">Pause</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div>⏱ Time: <span id="time">0</span>s</div>
+      <div>⚡ Speed: <span id="speed">0</span> WPM</div>
+      <div>🎯 Accuracy: <span id="accuracy">100</span>%</div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confetti"></div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
